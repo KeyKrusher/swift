@@ -213,3 +213,7 @@ class WorkingDirectory(object):
 
     def __exit__(self, type, value, traceback):
         os.chdir(self.old_cwd)
+
+# Check if __main__
+if __name__ == '__main__':
+    sys.exit()
